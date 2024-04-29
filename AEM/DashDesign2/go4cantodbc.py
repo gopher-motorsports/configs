@@ -51,7 +51,7 @@ with open(arg) as f:
 	for mod_name, mod_data in modules.items():
 		id_arr.append({"id": int(mod_data["id"]), "buses":mod_data["buses"]})
 		
-	outname1 = "dbc_GAN0_"+re.sub("yaml","dbc",arg)
+	outname1 = "dbc_GCAN0_"+re.sub("yaml","dbc",arg)
 	outname2 = "dbc_GCAN1_"+re.sub("yaml","dbc",arg)
 	outname3 = "dbc_GCAN2_"+re.sub("yaml","dbc",arg)
 	if os.path.isfile(outname1):
